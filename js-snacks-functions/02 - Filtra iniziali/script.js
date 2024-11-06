@@ -5,9 +5,23 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function sameFirstChar(names) {
+
+    subSameChar = [];
+
+    for (let i = 0; i < names.length; i++) {
+        if (names[i][0] === "A") {
+            subSameChar.push(names[i]);
+        }
+    }
+    return subSameChar;
+}
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
+sameFirstChar(names)
 
+console.log(subSameChar)
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
