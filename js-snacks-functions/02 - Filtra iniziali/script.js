@@ -5,6 +5,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+
+/**
+ * Description placeholder
+ *
+ * @param {Array} names
+ * @returns {Array}
+ */
 function sameFirstChar(names) {
 
     subSameChar = [];
