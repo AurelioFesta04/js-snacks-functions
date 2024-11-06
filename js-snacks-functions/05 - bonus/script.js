@@ -7,12 +7,27 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
-
 // Dichiara la funzione qui.
 
+function treSaluti(name) {
+    const time = new Date();
+    let saluto = ("");
+
+    if (time.getHours() <= 13) {
+        saluto = `buongiorno ${name}`;
+    } else if (time.getHours() <= 17) {
+        saluto = `buon pomeriggio ${name}`;
+    } else if (time.getHours() > 17) {
+        saluto = `buonasera ${name}`;
+    }
+
+    return saluto;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+treSaluti(name)
 
+console.log(treSaluti(name))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
